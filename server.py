@@ -23,8 +23,6 @@ def get_weather():
 
     weather_data = get_current_weather(city)
 
-    pprint(weather_data['cod'])
-
     # error handling
     if not weather_data['cod'] == 200:
         if not weather_data['cod'] == 404:
